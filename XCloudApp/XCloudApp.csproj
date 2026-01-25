@@ -8,10 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Web\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <_ContentIncludedByDefault Remove="Components\App.razor" />
       <_ContentIncludedByDefault Remove="Components\Layout\MainLayout.razor" />
       <_ContentIncludedByDefault Remove="Components\Layout\NavMenu.razor" />
@@ -21,18 +17,69 @@
       <_ContentIncludedByDefault Remove="Components\Pages\NotFound.razor" />
       <_ContentIncludedByDefault Remove="Components\Routes.razor" />
       <_ContentIncludedByDefault Remove="Components\_Imports.razor" />
+      <_ContentIncludedByDefault Remove="WebClient\Components\App.razor" />
+      <_ContentIncludedByDefault Remove="WebClient\Components\Layout\MainLayout.razor" />
+      <_ContentIncludedByDefault Remove="WebClient\Components\Layout\NavMenu.razor" />
+      <_ContentIncludedByDefault Remove="WebClient\Components\Layout\ReconnectModal.razor" />
+      <_ContentIncludedByDefault Remove="WebClient\Components\Pages\Error.razor" />
+      <_ContentIncludedByDefault Remove="WebClient\Components\Pages\Home.razor" />
+      <_ContentIncludedByDefault Remove="WebClient\Components\Pages\NotFound.razor" />
+      <_ContentIncludedByDefault Remove="WebClient\Components\Routes.razor" />
+      <_ContentIncludedByDefault Remove="WebClient\Components\_Imports.razor" />
     </ItemGroup>
 
     <ItemGroup>
-      <AdditionalFiles Include="Web\Components\App.razor" />
-      <AdditionalFiles Include="Web\Components\Layout\MainLayout.razor" />
-      <AdditionalFiles Include="Web\Components\Layout\NavMenu.razor" />
-      <AdditionalFiles Include="Web\Components\Layout\ReconnectModal.razor" />
-      <AdditionalFiles Include="Web\Components\Pages\Error.razor" />
-      <AdditionalFiles Include="Web\Components\Pages\Home.razor" />
-      <AdditionalFiles Include="Web\Components\Pages\NotFound.razor" />
-      <AdditionalFiles Include="Web\Components\Routes.razor" />
-      <AdditionalFiles Include="Web\Components\_Imports.razor" />
+      <ProjectReference Include="..\XCloudApp.DAL\XCloudApp.DAL.csproj" />
+      <ProjectReference Include="..\XCloudApp.Domain\XCloudApp.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\app.css" />
+      <None Include="wwwroot\favicon.png" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+      <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+      <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
     </ItemGroup>
 
 </Project>

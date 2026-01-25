@@ -7,9 +7,7 @@ public abstract class TrackableEntity
     protected TrackableEntity()
     {
         CreatedDate = _currentUTC;
-        UpdatedDate = _currentUTC;
     }
 
     public DateTime CreatedDate { get; private set; }
-    public DateTime UpdatedDate { get; set; }
 }

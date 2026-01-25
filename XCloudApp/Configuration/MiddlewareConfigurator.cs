@@ -1,4 +1,4 @@
-﻿using XCloudApp.Web.Components;
+﻿using XCloudApp.Components;
 
 namespace XCloudApp.Configuration;
 
@@ -17,9 +17,10 @@ public static class MiddlewareConfigurator
         app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
         app.UseHttpsRedirection();
 
+        app.MapStaticAssets();
+        
         app.UseAntiforgery();
 
-        app.MapStaticAssets();
         app.MapRazorComponents<App>()
            .AddInteractiveServerRenderMode();
         

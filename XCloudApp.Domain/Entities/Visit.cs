@@ -7,5 +7,5 @@ public class Visit : TrackableEntity
 {
     public int Id { get; set; }
     public CSP CloudServiceProvider { get; set; }
-    
+    public string? Location { get; set; }
 }

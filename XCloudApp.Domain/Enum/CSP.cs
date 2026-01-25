@@ -2,7 +2,7 @@
 
 public enum CSP
 {
-    Azure,
-    AmazonWebServices,
-    GoogleCloudPlatform
+    Azure = 1,
+    AmazonWebServices = 2,
+    GoogleCloudPlatform = 3
 }
