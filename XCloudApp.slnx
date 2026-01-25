@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Tests/">
+    <Project Path="XCloudApp.Tests/XCloudApp.Tests.csproj" />
+  </Folder>
+  <Project Path="XCloudApp.DAL/XCloudApp.DAL.csproj" />
+  <Project Path="XCloudApp.Domain/XCloudApp.Domain.csproj" />
+  <Project Path="XCloudApp/XCloudApp.csproj" />
+</Solution>

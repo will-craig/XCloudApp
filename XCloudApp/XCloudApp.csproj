@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+      <Folder Include="Web\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Components\App.razor" />
+      <_ContentIncludedByDefault Remove="Components\Layout\MainLayout.razor" />
+      <_ContentIncludedByDefault Remove="Components\Layout\NavMenu.razor" />
+      <_ContentIncludedByDefault Remove="Components\Layout\ReconnectModal.razor" />
+      <_ContentIncludedByDefault Remove="Components\Pages\Error.razor" />
+      <_ContentIncludedByDefault Remove="Components\Pages\Home.razor" />
+      <_ContentIncludedByDefault Remove="Components\Pages\NotFound.razor" />
+      <_ContentIncludedByDefault Remove="Components\Routes.razor" />
+      <_ContentIncludedByDefault Remove="Components\_Imports.razor" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Web\Components\App.razor" />
+      <AdditionalFiles Include="Web\Components\Layout\MainLayout.razor" />
+      <AdditionalFiles Include="Web\Components\Layout\NavMenu.razor" />
+      <AdditionalFiles Include="Web\Components\Layout\ReconnectModal.razor" />
+      <AdditionalFiles Include="Web\Components\Pages\Error.razor" />
+      <AdditionalFiles Include="Web\Components\Pages\Home.razor" />
+      <AdditionalFiles Include="Web\Components\Pages\NotFound.razor" />
+      <AdditionalFiles Include="Web\Components\Routes.razor" />
+      <AdditionalFiles Include="Web\Components\_Imports.razor" />
+    </ItemGroup>
+
+</Project>
