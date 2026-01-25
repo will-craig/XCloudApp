@@ -28,3 +28,5 @@ app.MapGet("/visit", async (WebAppDbContext dbContext) =>
 });
 app.Run();
 
+public partial class Program { }
+

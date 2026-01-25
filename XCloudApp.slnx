@@ -1,7 +1,6 @@
 <Solution>
-  <Folder Name="/Tests/">
-    <Project Path="XCloudApp.Tests/XCloudApp.Tests.csproj" />
-  </Folder>
+  <Folder Name="/Tests/" />
+  <Project Path="Tests/XCloudApp.Tests/XCloudApp.Tests.csproj" />
   <Project Path="XCloudApp.DAL/XCloudApp.DAL.csproj" />
   <Project Path="XCloudApp.Domain/XCloudApp.Domain.csproj" />
   <Project Path="XCloudApp/XCloudApp.csproj" />
