@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xcloudapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xcloudapp
+  template:
+    metadata:
+      labels:
+        app: xcloudapp
+    spec:
+      containers:
+      - name: xcloudapp
+        image: xcloudapp:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ASPNETCORE_HTTP_PORTS
+          value: "8080"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: xcloudapp-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: xcloudapp

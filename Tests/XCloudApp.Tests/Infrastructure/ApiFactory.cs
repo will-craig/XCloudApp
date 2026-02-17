@@ -32,7 +32,7 @@ public sealed class ApiFactory : WebApplicationFactory<Program>
 
             services.AddDbContext<WebAppDbContext>(options =>
             {
-                options.UseInMemoryDatabase($"XCloudAppTests-{Guid.NewGuid()}");
+                options.UseInMemoryDatabase("XCloudAppTests");
             });
         });
     }

@@ -3,6 +3,7 @@ using XCloudApp.Configuration;
 using XCloudApp.DAL;
 using XCloudApp.Domain.Entities;
 using XCloudApp.Domain.Enum;
+using XCloudApp.Services;
 
 var app = WebApplication
          .CreateBuilder(args)
@@ -11,7 +12,7 @@ var app = WebApplication
          .ConfigureMiddleware();
 
 app.MapHealthChecks("/healthz");
-app.MapPost("/visit", async (WebAppDbContext dbContext) =>
+app.MapPost("/visit", async (WebAppDbContext dbContext, ISyncService syncService) =>
 {
     var newVisit = new Visit
     {
@@ -19,6 +20,10 @@ app.MapPost("/visit", async (WebAppDbContext dbContext) =>
     };
     await dbContext.Visits.AddAsync(newVisit);
     await dbContext.SaveChangesAsync();
+    
+    // Fire and forget sync (or await depending on consistency requirements)
+    await syncService.SyncVisitAsync(newVisit);
+
     return Results.Ok(newVisit);
 }); 
 app.MapGet("/visit", async (WebAppDbContext dbContext) =>

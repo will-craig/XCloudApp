@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using XCloudApp.DAL;
+using XCloudApp.Services;
 
 namespace XCloudApp.Configuration;
 
@@ -21,6 +22,9 @@ public static class ServiceConfigurator
         {
             client.BaseAddress = new Uri(appUrl);
         });
+        builder.Services.AddHttpClient();
+        builder.Services.AddScoped<ISyncService, SyncService>();
+
         return builder;
     }
 }
